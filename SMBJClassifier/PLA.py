@@ -416,6 +416,7 @@ def createCondTrace_PLA(data, Amp, Freq, RR, Vbias, drange=None):
     data: list of string
         Each string in the list contains the directory of one Dataset
     Amp: numpy array
+    
         1D array with experimental parameters "Current Amplifier" for each Dataset
     Freq: numpy array 
         1D array with experimental parameters "Sampling Frequency" for each Dataset
