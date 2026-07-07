@@ -240,9 +240,9 @@ def histData(data, RR, group, num_group, averageHist, dimension, sampleNum, pla)
     ## Define the following parameters for constructing histograms 
     if (pla):
         inputName = 'Data_CC'       # Name of data files that contain the preprocessed conductance traces
-        cutoff_value = '4'          # cutoff slope parameter of PLA for classification 
+        cutoff_value = '4.0'          # cutoff slope parameter of PLA for classification 
     else:
-        inputName = 'Data_LPF'      # Name of data files that contain the preprocessed conductance traces
+        inputName = 'LPFData/Data_LPF'     # Name of data files that contain the preprocessed conductance traces
         cutoff_value = 'R95'        # R square value for classification 
     TEST_FRACTION = 0.3       # Portion of testing data occupied in the entire Dataset
     trailNum = 500            # Number of total histograms per Dataset
